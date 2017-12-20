@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond space collector</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <audio id="theme_sound" src="sounds/magical_theme.mp3" autoplay loop></audio>
+    <audio id="diamond_sound" src="sounds/message.mp3"></audio>
+    <audio id="enemy_sound" src="sounds/stomp.mp3"></audio>
+    <audio id="gameover_sound" src="sounds/exit.mp3"></audio>
+    <audio id="win_sound" src="sounds/stagestart.mp3"></audio>
+
+    <h1 id="gamename" class="gamename">Diamond space collector</h1>
+    <div id="game-over-overlay" class="game-over-overlay">
+    </div>
+    <div id="game-over" class="game-over">
+        <h1>GAME OVER</h1>
+        <button id="play-again" class="play-again">Play Again</button>
+    </div>
+    <div id="winner-overlay" class="winner-overlay">
+    </div>
+    <div id="game-win" class="game-win">
+        <h1>Congratulation! You WINNER!</h1>
+        <button id="play-again-winner" class="play-again-winner">Play Again</button>
+    </div>
+    <div class="wrapper">
+        <div class="instructions">
+            <div>
+                move with <span class="key">keyboard arrows</span>
+            </div>
+        </div>
+    </div>
+    <canvas id="map" class="map"></canvas>
+    <canvas id="player" class="player"></canvas>
+    <canvas id="enemy" class="enemy"></canvas>
+    <canvas id="diamond" class="diamond"></canvas>
+    <canvas id="statistics" class="statistics"></canvas>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>

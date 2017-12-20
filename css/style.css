@@ -1,0 +1,96 @@
+body {
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.2em;
+}
+
+.wrapper {
+    width: 1264px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.screenscots {
+    margin-top: 50px;
+}
+
+.instructions {
+    font-family: sans-serif;
+    color: #757575;
+}
+
+.key {
+    color: #aaffdd;
+}
+
+.game-over,
+.game-over-overlay,
+.game-win,
+.winner-overlay {
+    margin: auto;
+    width: 1264px;
+    height: 710px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+.game-over-overlay {
+    background-color: black;
+    opacity: .5;
+}
+
+.winner-overlay {
+    background-color: yellowgreen;
+    opacity: .5;
+}
+
+.game-over,
+.game-win {
+    height: 200px;
+    color: white;
+}
+
+.game-over h1,
+.game-win h1 {
+    font-size: 3em;
+}
+
+.game-over button,
+.game-win button {
+    font-size: 1.5em;
+}
+
+.gamename {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    height: 30px;
+
+}
+
+canvas {
+    display: block;
+    margin: 50px auto 0px;
+}
+
+.player,
+.enemy,
+.diamond,
+.statistics {
+    display: block;
+    margin: -632px auto 0px;
+}
